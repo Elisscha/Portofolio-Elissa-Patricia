@@ -1,0 +1,284 @@
+:root {
+  --primary: #1E66FF;
+  --secondary: #E9F2FF;
+  --text-dark: #111111;
+  --text-gray: #555555;
+  --bg: #FFFFFF;
+  --border: #DDDDDD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.logo {
+  color: var(--primary);
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--secondary);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #154bcc;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  text-align: left; 
+}
+
+.skills-column h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.skills-column ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--text-dark);
+}
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.skills-column h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.skills-column ul {
+  list-style: disc inside;
+  color: var(--text-dark);
+}
+
+.skills-column li {
+  margin-bottom: 8px;
+}
+
+.content-section {
+  padding: 50px 20px;
+}
+
+.content-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#projects .card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto !important;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#projects .card-grid.two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#projects .card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-grid.two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.card-grid.three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#projects .card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;  
+  object-fit: cover;     
+  border-radius: 10px;
+  display: block;
+  height: auto !important;
+}
+
+.card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.card .org {
+  font-weight: bold;
+  color: var(--text-dark);
+  margin: 5px 0;
+}
+
+.card .year {
+  font-style: italic;
+  color: var(--text-gray);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+#contact p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--secondary);
+  margin-top: 50px;
+}
+
